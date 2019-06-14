@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<meta charset="UTF-8">
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
     <style>
-      h1 {font-family: 'Dancing Script', cursive;}
-      body {font-family: 'Helvetica';}
-      ul {list-style-type: none; padding: 0;} 
-      li {margin: 10px 0;}
+      h1 {font-family: 'Dancing Script', cursive; text-align:center; color:navy;}
+	  h2 {font-family: 'Dancing Script', cursive; text-align:center; color:navy}
+	  ul {list-style-type: none; padding: 0; text-align:center; color:navy} 
+	  li {margin: 10px 0; text-align:center; color:navy}
+	  p {text-align:center; color:navy;}
+      .screen-reader-only {
+		 position: absolute;
+		 height: 1px;
+		 width: 1px;
+		 clip: rect(1px 1px 1px 1px); // IE 6 and 7
+		 clip: rect(1px,1px,1px,1px);
+		 clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+		 -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+		 overflow: hidden !important;
+		 }
+	  body {
+		font-family: 'Roboto';
+		background-color: #cde2eb;
+		}
     </style>
   </head>
   <body>
-    <title>Laura Eberly</title>
-    <h1>Laura Eberly, Accessibility Enthusiast</h1>
-    <i>Forget diamonds, pivot tables are a girl's best friend.</i>
-    <h2>My Accessibility Writing</h2>
+	<title>Laura Eberly's Website</title>
+	<h1>Laura Eberly, Accessibility Enthusiast</h1>
+    <p><i>Forget diamonds, pivot tables are a girl's best friend.</i></p>
+	<h2>My Accessibility Writing</h2>
     <ul>
       <li><a href="https://wheresyourdog.com/2018/04/19/are-you-afraid-of-the-dark-a-sighted-persons-adventures-with-the-screen-reader-experience/">
         “Are You Afraid of the Dark?”: a Sighted Person’s Adventures With the Screen Reader Experience</a></li>
@@ -28,11 +44,15 @@
       <li><a href="https://youdescribe.org/video/6H-C-23JePM?ad=58e7cf2e46e13dfd851a2248">
       Antarctica: Ready for winter (Documentary)</a></li>
     </ul>
-    <h2>Find Me Around the Web</h2>
+	<h2>A Few Things About Me</h2>
     <ul>
-      <li>Twitter @<a href="https://twitter.com/McEberthy">McEberthy</a></li>
-      <li>LinkedIn/<a href="https://www.linkedin.com/in/laurajmeberly/">laurajmeberly</a></li>
-      <li>My &quot;walk-up&quot; theme song is by Donora: <a href="https://www.youtube.com/watch?v=jG__ghlhL80">Play Nice</a></li>
+      <li>Twitter: <a href="https://twitter.com/McEberthy">@McEberthy</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/laurajmeberly/">laurajmeberly</a></li>
+	  <li><a href="https://bugs.chromium.org/p/chromium/issues/list?can=1&q=reporter%3Aleberly%40chromium.org">
+	  Bugs I've written</a>
+	  <li>I'm hosting this site on <a href="https://github.com/ljme/lauraeberly">GitHub</a>.</li>
+      <li>My personal theme song is by Donora: <a href="https://www.youtube.com/watch?v=jG__ghlhL80">Play Nice</a>.</li>
     </ul>
-  </body>
+	<span class="screen-reader-only">This is a secret message for screen reader users only! Thanks for reading!</span>
+  </body>	
 </html>
